@@ -1,0 +1,7 @@
+training_home-page-alt uses card-column to handle with the columns but the images scales with the width of the page which would require changing the pixels of height and width of the card
+
+training_home-page uses normal rows and columns and all cards are scaled to a specific size, however some images are bigger than others therefore, when creating thumbnails the designiner should create the same size for all the thumbnails. For now the thumbnails are fixed size by assets/bootstrap/css/style.css .card-img-top. the drawback of having a fixed size for the height makes the images looks distorted when viewed on phones. card-img-top should be removed when there are consistent thumbnails for this page. You can also control how many cards should be displayed for all four modes(big monitor,small monitor,tablet,phone) by adjusting the col div class inside the html: 
+
+col-lg-3 col-md-4 col-sm-6 col-xs-12
+
+There are 12 columns in total therefore col-lg-3 represents the card takes 3 columns out of the 12
