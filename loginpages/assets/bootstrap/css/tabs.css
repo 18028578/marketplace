@@ -1,0 +1,70 @@
+/* Style the tab */
+.tab {
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #f1f1f1;
+}
+
+/* Style the spans inside the tab */
+.tab span {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 17px;
+}
+
+/* Change background color of spans on hover */
+.tab span:hover {
+background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab span.active {
+background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+display: none;
+padding: 6px 12px;
+border: 1px solid #ccc;
+border-top: none;
+table.fancy {
+margin: 1em 1em 1em 0;
+background: whitesmoke;
+border-collapse: collapse;
+}
+}
+table {
+margin: 1em 1em 1em 0;
+background: whitesmoke;
+border-collapse: collapse;
+}
+table th, table td {
+border: 1px silver gainsboro;
+padding: 0.2em;
+}
+table th {
+background: gainsboro;
+text-align: left;
+}
+table tr:hover td {
+background: mintcream !important;
+}
+table caption {
+margin-left: inherit;
+margin-right: inherit;
+}
+thead{
+font-weight: bold;
+text-align: center;
+}
+/* LIST #2 */
+
+ol { font-style:italic; font-family:Georgia, Times, serif; font-size:24px;  }
+ol li { border-width: thin;}
+ol li span { padding:8px; font-style:normal; font-family:Arial; font-size:13px; }

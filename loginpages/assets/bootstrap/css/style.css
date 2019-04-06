@@ -1,0 +1,95 @@
+/* spacing all around the card title */
+.card-title{
+	margin:0px;
+}
+
+/* add ellipsis to card with multiline */
+.card-text{
+    display: -webkit-box;
+    font-size: 14px;
+    margin: 0 auto;
+    -webkit-line-clamp:4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* spacing for all containers*/
+.container{
+  padding-bottom: 15px;
+	margin-left:0px;
+	padding-left:0px;
+}
+
+/* create some space for the top and bottom of the card*/
+.card{
+	margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* height of card image, remove this when u have custom thumbnails with the same size to prevent distortion on all type of devices*/
+.card-img-top{
+    height:150px;
+}
+
+/* Shadow effect for hovering card*/
+.card:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+/* Prevent hyperlinked cards from being underlined and blue*/
+a{
+	text-decoration: none;
+	color:#000000;
+}
+
+/* Prevent hyperlinked cards from changing colors when hovered*/
+a:hover {
+    color:#000000;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* attributes for the back to top button
+change border-radius to change how round the button is
+change button and right attribute if you want to change the position of the button*/
+#button {
+  display: inline-block;
+  background-color: lightskyblue;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
