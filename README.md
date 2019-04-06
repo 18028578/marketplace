@@ -3,37 +3,37 @@ Edited/new files: index.php, search_result.php, cv.php, dbConn.php
 
 What was done:
 
--search function that searches through database for items including the search string
+	-search function that searches through database for items including the search string
 
--if "country" filter field is filled, will only show users whose country matches or includes the string
+	-if "country" filter field is filled, will only show users whose country matches or includes the string
 
--clicking on search will post the form to search_result.php
+	-clicking on search will post the form to search_result.php
 
--search_result.php will display all the search results
+	-search_result.php will display all the search results
 
--pages are not implemented, so it will be a long webpage if there are alot of hits
+	-pages are not implemented, so it will be a long webpage if there are alot of hits
 
--clicking on hyperlink of the user's name in the reults will redirect to cv.php
+	-clicking on hyperlink of the user's name in the reults will redirect to cv.php
 
--cv.php will display the selected user's info in apporiate fields
+	-cv.php will display the selected user's info in apporiate fields
 
--cv.php, skills section is not yet implemented
+	-cv.php, skills section is not yet implemented
 
--work experience and education uses serialized array, see below for details
+	-work experience and education uses serialized array, see below for details
 
 
 
 Read this:
 
--dbConn.php also includes the alert() pop up javascript, can be used for testing
+	-dbConn.php also includes the alert() pop up javascript, can be used for testing
 
--on copying the code for the search function, the only bits needed are between line 48 to 55 in index.php
+	-on copying the code for the search function, the only bits needed are between line 48 to 55 in index.php
 
--import "users.sql" for the users table used
+	-import "users.sql" for the users table used
 
--users table does not include password at the moment
+	-users table does not include password at the moment
 
--to insert new rows for the table "users" use code below, can also reuse the code for profile page later on
+	-to insert new rows for the table "users" use code below, can also reuse the code for profile page later on
 
 		<?php
 		include('dbConn.php');
