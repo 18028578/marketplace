@@ -22,6 +22,7 @@ What was done:
 -work experience and education uses serialized array, see below for details
 
 
+
 Read this:
 
 -dbConn.php also includes the alert() pop up javascript, can be used for testing
